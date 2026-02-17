@@ -58,6 +58,12 @@ def delete_meal(id):
     db.session.commit()
     return jsonify({"message": "Refeição deletada com sucesso!"})
 
+@app.route('/meals', methods=['GET'])
+def read_meal():
+    meals = Meal.query.all()
+    meals_list = [meal.to_dict() for meal in meals]
+    return jsonify(meals_list)
+
 if __name__ == "__main__":
     with app.app_context():
         db.create_all()
