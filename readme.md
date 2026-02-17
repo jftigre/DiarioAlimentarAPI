@@ -2,7 +2,6 @@
 
 Uma API RESTful desenvolvida em **Python** com **Flask** para o gerenciamento de registros de dieta diária. Este projeto permite o controle total sobre as refeições, facilitando o monitoramento de hábitos alimentares de forma organizada e eficiente.
 
-[Image of a REST API architecture showing endpoints for GET, POST, PUT, and DELETE methods]
 
 ##  Tecnologias e Ferramentas
 
@@ -12,7 +11,7 @@ Uma API RESTful desenvolvida em **Python** com **Flask** para o gerenciamento de
 * **ORM:** Flask-SQLAlchemy
 * **Containerização:** Docker & Docker Compose
 
-## 🛠️ Como executar o projeto
+##  Como executar o projeto
 
 ### Pré-requisitos
 
@@ -46,7 +45,7 @@ Uma API RESTful desenvolvida em **Python** com **Flask** para o gerenciamento de
    ```
    *As tabelas do banco de dados serão criadas automaticamente na primeira execução através do `db.create_all()`.*
 
-## 📍 Endpoints da API
+##  Endpoints da API
 
 | Método | Endpoint | Descrição |
 | :--- | :--- | :--- |
@@ -56,7 +55,6 @@ Uma API RESTful desenvolvida em **Python** com **Flask** para o gerenciamento de
 | `PUT` | `/meals/<id>` | Atualiza os dados de uma refeição existente |
 | `DELETE` | `/meals/<id>` | Remove uma refeição do histórico |
 
-[Image of a database schema showing a meal table with fields for name, description, datetime, and is_diet]
 
 ### Exemplo de Payload (`POST /meals`):
 
@@ -69,9 +67,9 @@ Uma API RESTful desenvolvida em **Python** com **Flask** para o gerenciamento de
 }
 ```
 
-## 📋 Funcionalidades Implementadas
+##  Funcionalidades Implementadas
 
 * **CRUD Completo**: Gerenciamento total de registros de refeições (Criação, Leitura, Atualização e Exclusão).
 * **Persistência em MySQL**: Dados armazenados de forma segura em banco de dados relacional via Docker.
 * **Validação de Dados**: Tratamento de campos obrigatórios e tipos de dados no backend.
-* **Tratamento de Datas**: Armazenamento e retorno de registros no padrão ISO 8601.
+* **Tratamento de Datas**: Armazenamento e retorno de registros.
